@@ -751,7 +751,7 @@ impl fmt::Debug for Stmt {
 }
 
 
-#[derive(Clone, PartialEq, Eq, RustcEncodable, RustcDecodable, Hash)]
+#[derive(Clone, Debug, PartialEq, Eq, RustcEncodable, RustcDecodable, Hash)]
 pub enum StmtKind {
     /// A local (let) binding.
     Local(P<Local>),
